@@ -1,0 +1,335 @@
+            /* Inicialización */
+            
+            html,
+            body,
+            ul {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                height: 100%;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            /* Shadows */
+            
+            h1,
+            #content,
+            input,
+            button {
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.75);
+            }
+            /* Background */
+            
+            body {
+                background-color: lightgray;
+                background-image: url("../images/mario_party_superstars_birthday_cake_back.jpg");
+                background-size: cover;
+            }
+            /* Cabezera */
+            
+            #header {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+            
+            #header h1 {
+                height: 75px;
+                width: 260px;
+                background-color: rgb(255, 75, 152);
+                border-radius: 10px;
+                color: white;
+                display: inline-block;
+                justify-content: center;
+                font-size: 50px;
+                text-align: center;
+                top: 0;
+                left: calc(50vw - 130px);
+                position: relative;
+            }
+            /* Lineas encima y debajo de la cabecera */
+            
+            #header h1::after,
+            #header h1::before {
+                background-color: rgb(255, 75, 152);
+                content: "";
+                display: block;
+                height: 3px;
+                left: 60px;
+                position: relative;
+                width: 150px;
+            }
+            
+            #header h1::after {
+                top: 25px;
+            }
+            
+            #header h1::before {
+                bottom: 25px;
+            }
+            /* Contenedor del formulario */
+            
+            #content {
+                box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+                display: table;
+                height: 600px;
+                left: calc(50vw - 500px);
+                position: absolute;
+                top: 150px;
+                width: 1000px;
+            }
+            
+            #content div:first-child {
+                background-color: black;
+                display: table-cell;
+                position: relative;
+                width: 50%;
+            }
+            
+            #content div:first-child p {
+                color: white;
+                font-size: 30px;
+                position: relative;
+                text-align: center;
+                width: 100%;
+            }
+            
+            #content div:first-child p::after,
+            #content div:nth-child(2) p::after {
+                background-color: lightgray;
+                content: "";
+                display: block;
+                height: 3px;
+                left: 0px;
+                position: relative;
+                top: 20px;
+                width: 500px;
+            }
+            
+            input {
+                background-color: transparent;
+                border-radius: 10px;
+                height: 40px;
+                outline: none;
+                padding-left: 50px;
+                width: 70%;
+            }
+            
+            label {
+                bottom: 35px;
+                color: lightgray;
+                font-size: 15px;
+                left: 70px;
+                position: absolute;
+                transition: all 0.5s ease;
+            }
+            
+            #content div:first-child label.top {
+                background-color: black;
+                border-radius: 25px;
+                bottom: 57px;
+                color: white;
+                font-size: 15px;
+                left: 70px;
+                padding-left: 5px;
+                padding-right: 5px;
+                position: absolute;
+            }
+            
+            #content div:nth-child(2) label.top {
+                background-color: white;
+                border-radius: 25px;
+                bottom: 57px;
+                color: black;
+                font-size: 15px;
+                left: 70px;
+                padding-left: 5px;
+                padding-right: 5px;
+                position: absolute;
+            }
+            
+            #content div ul li {
+                display: block;
+                left: 20px;
+                padding: 20px;
+                position: relative;
+                position: relative;
+                top: 20px;
+            }
+            
+            #content div:first-child ul li input {
+                border: solid 2px white;
+                box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.425);
+                color: white;
+            }
+            
+            #content div:first-child ul li:nth-child(1) input {
+                width: 35%;
+            }
+            
+            #content div:first-child ul li:nth-child(2) input {
+                width: 65%;
+            }
+            
+            #content div:first-child ul li:nth-child(3) input {
+                width: 25%;
+            }
+            
+            #content div:first-child ul li:nth-child(4) input {
+                width: 40%;
+            }
+            
+            #content div:nth-child(2) {
+                background-color: white;
+                display: table-cell;
+                position: relative;
+                width: 50%;
+            }
+            
+            #content div:nth-child(2) p {
+                color: black;
+                font-size: 30px;
+                position: relative;
+                text-align: center;
+                width: 100%;
+            }
+            
+            #content div:nth-child(2) ul li input {
+                border: solid 2px black;
+                color: black;
+            }
+            
+            #content div:nth-child(2) ul li:nth-child(1) input {
+                width: 60%;
+            }
+            
+            #content div:nth-child(2) ul li:nth-child(2) input,
+            #content div:nth-child(2) ul li:nth-child(3) input {
+                width: 30%;
+            }
+            
+            #content div:nth-child(2) ul li:last-child {
+                width: 400px;
+                position: relative;
+                top: 50px;
+                left: -50px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child input {
+                display: none;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label {
+                background-image: url("../images/character_sprites.png");
+                border: solid 1px black;
+                border-radius: 15px;
+                color: black;
+                height: 62px;
+                width: 62px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                position: relative;
+                display: inline-block;
+                transition: all 0.5s ease;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:hover {
+                box-shadow: 5px 5px 5px 2px rgba(128, 128, 128, 0.808);
+            }
+            
+            #content div:nth-child(2) ul li:last-child input:checked+label {
+                box-shadow: 5px 5px 5px 2px rgba(255, 5, 113, 0.808);
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(1) {
+                background-position-x: -1px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(2) {
+                background-position-x: -64px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(3) {
+                background-position-x: -127px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(4) {
+                background-position-x: -190px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(5) {
+                background-position-x: -253px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(6) {
+                background-position-x: -316px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(7) {
+                background-position-x: -379px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(8) {
+                background-position-x: -442px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(9) {
+                background-position-x: -505px;
+                background-position-y: -1px;
+            }
+            
+            #content div:nth-child(2) ul li:last-child label:nth-of-type(10) {
+                background-position-x: -568px;
+                background-position-y: -1px;
+            }
+            
+            #send {
+                background-color: rgb(255, 75, 152);
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                display: block;
+                font-size: 20px;
+                height: 80px;
+                left: calc(50vw - 150px);
+                position: relative;
+                top: 85vh;
+                width: 300px;
+            }
+            
+            #send:hover {
+                background-color: rgb(255, 5, 113);
+            }
+            
+            .fas {
+                bottom: 27px;
+                color: lightgray;
+                font-size: 30px;
+                height: 30px;
+                left: 30px;
+                position: absolute;
+                width: 30px;
+            }
+            
+            #content div div {
+                text-align: end;
+                height: 40px;
+                width: 40px;
+                position: absolute;
+                display: block;
+                top: 25px;
+                left: 400px;
+                background-image: url("../images/error_icon.png");
+                background-size: 40px;
+                visibility: hidden;
+            }

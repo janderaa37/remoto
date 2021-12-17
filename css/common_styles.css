@@ -1,0 +1,67 @@
+    /* Inicializacion del html */
+    html,
+    body,
+    ul {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Logo */
+    #logo {
+        width: 200px;
+        height: 149px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-image: url("../images/mario_party_superstars_logo.png");
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+
+    /* Cabezera */
+
+    #header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    }
+
+    #header h1 {
+    height: 75px;
+    width:fit-content;
+    background-color: rgb(255, 75, 152);
+    border-radius: 10px;
+    color: rgb(255, 249, 249);
+    display: block;
+    font-size: 50px;
+    top: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    /* Lineas encima y debajo de la cabecera */
+
+    #header h1::after,
+    #header h1::before {
+    background-color: rgb(255, 75, 152);
+    content: "";
+    display: block;
+    height: 3px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    }
+
+    #header h1::after {
+    top: 25px;
+    }
+
+    #header h1::before {
+    bottom: 25px;
+    }

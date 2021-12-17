@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common_styles.css">
+    <link rel="stylesheet" href="../css/form_styles.css">
+    <script src="../js/from_scrypts.js"></script>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Logo que te lleva de vuelta al index -->
+    <a id="logo" href="../index.html"></a>
+    <!-- Header -->
+    <div id="header">
+        <h1>Formulario</h1>
+    </div>
+    <!-- Formulario -->
+    <div id="content">
+        <!-- Información personal -->
+        <div>
+            <h2>Información personal</h2>
+            <form action="post" name="formA">
+                <ul>
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <label for="name">Name</label>
+                        <input placeholder="1-20 character" type="text" id="name" name="name">
+                        <div></div>
+                    </li>
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <label for="surname">Surname</label>
+                        <input placeholder="1-30 character" type="text" id="surname" name="surname">
+                        <div></div>
+                    </li>
+                    <li>
+                        <i class="fas fa-birthday-cake"></i>
+                        <label for="birthday">Birthday</label>
+                        <input placeholder="DD/MM/YYYY" type="text" id="birthdate" name="birthdate">
+                        <div></div>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt"></i>
+                        <label for="phone">Phone</label>
+                        <input placeholder="[+??] 6?? ?? ?? ??" type="text" id="phone" name="phone">
+                        <div></div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <!-- Información de usuario -->
+        <div>
+            <h2>Información de usuario</h2>
+            <form action="post" name="formB">
+                <ul>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <label for="email">Email</label>
+                        <input placeholder="name@domainame.es" type="text" id="email" name="email">
+                        <div></div>
+                    </li>
+                    <li>
+                        <i class="fas fa-key"></i>
+                        <label for="password">Password</label>
+                        <input placeholder="8-16 character" type="password" id="password" name="password">
+                        <div></div>
+                    </li>
+                    <li>
+                        <i class="fas fa-key"></i>
+                        <label for="repeat">Repeat </label>
+                        <input placeholder="Confirm password" type="password" id="repeat" name="repeat">
+                        <div></div>
+                        
+                    </li>
+                    <li>
+                        <input type="radio" name="question" id="mario">
+                        <label for="mario"></label>
+                        <input type="radio" name="question" id="luigi">
+                        <label for="luigi"></label>
+                        <input type="radio" name="question" id="peach">
+                        <label for="peach"></label>
+                        <input type="radio" name="question" id="daisy">
+                        <label for="daisy"></label>
+                        <input type="radio" name="question" id="wario">
+                        <label for="wario"></label>
+                        <input type="radio" name="question" id="waluigi">
+                        <label for="waluigi"></label>
+                        <input type="radio" name="question" id="yoshi">
+                        <label for="yoshi"></label>
+                        <input type="radio" name="question" id="dk">
+                        <label for="dk"></label>
+                        <input type="radio" name="question" id="estela">
+                        <label for="estela"></label>
+                        <input type="radio" name="question" id="birdo">
+                        <label for="birdo"></label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <button id="send">Submit: </button>
+</body>
+
+</html>

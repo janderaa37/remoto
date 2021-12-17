@@ -1,0 +1,143 @@
+/* Inicializacion del html */
+
+html,
+body,
+ul,
+a {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* Imagen de fondo que cubre la pantalla sin sobresalir ni duplicarse */
+
+body {
+    background-image: url("../images/mario_party_superstars_back.jpg");
+    background-size: cover;
+}
+
+
+/* Header */
+
+
+/* Botón del menú desplegable */
+
+#header button {
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/button_menu.png");
+    background-size: cover;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: none;
+    color: transparent;
+    border-radius: 20%;
+    transition: left 1s ease;
+}
+
+
+/* Titulo de sitio */
+
+#header h1 {
+    width: 500;
+    height: 60;
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 25px;
+    color: rgb(255, 75, 152);
+}
+
+
+/* Subtítulo del sitio */
+
+#header h1 span {
+    position: absolute;
+    top: 200%;
+    right: 16%;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 25px;
+    color: rgb(255, 75, 152);
+}
+
+
+/* Pequeño mensaje de la izquierda */
+
+#header p {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 25px;
+    color: rgb(255, 75, 152);
+}
+
+
+/* Menú vertical con efecto velo */
+
+#index ul {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 50px;
+    display: table;
+    table-layout: fixed;
+}
+
+
+/* Celdas del menú vertical */
+
+#index ul li {
+    width: 20%;
+    height: 20%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+#index ul li:hover {
+    background-color: rgb(255, 75, 152);
+}
+
+#index ul li ul {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    height: 500px;
+    width: 100%;
+}
+
+#index ul li:hover ul {
+    display: block;
+    visibility: visible;
+}
+
+
+/* Primer y ultimo elemento de la lista usados para generar ese espacio de los laterales */
+
+#index ul li:first-child {
+    width: 10%;
+    background-color: transparent;
+}
+
+#index ul li:last-child {
+    width: 10%;
+    background-color: transparent;
+}

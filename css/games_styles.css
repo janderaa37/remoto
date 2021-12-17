@@ -1,0 +1,86 @@
+    /* Imagen de fondo que cubre la pantalla sin sobresalir ni duplicarse */
+    body {
+        background-image: url("../images/mario_party_superstars_space_land.jpg");
+        background-size: cover;
+    }
+
+    /* Menú */
+    #tab-menu {
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 250px;
+        width: 1000px;
+    }
+
+    /* Ocultar los inputs */
+    #tab-menu input {
+        display: none;
+    }
+
+    /* Tabs */
+    #tabs label {
+        background-color: rgba(0, 0, 0, 0.877);
+        border-radius: 5px 5px 0px 0px;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+        color: white;
+        cursor: pointer;
+        display:inline-block;
+        font-size: 12px;
+        font-size: 20px;
+        height: 50px;
+        margin: auto;
+        padding-top: 3px;
+        text-align: center;
+        vertical-align: middle;
+        width: 120px;
+    }
+
+    /* Paneles de contenido */
+    #panels {
+        background-color: white;
+        border-radius: 2px;
+        height: 450px;
+        overflow: hidden;
+        width: 1000px;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    /* Esconder los paneles de contenido */
+    #panels div {
+        display: none;
+    }
+
+    /* Parrafos */
+    #panels div p {
+        font-size: 15px;
+        height: fit-content;
+        width: 600px;
+    }
+
+    /* Visibilación de los paneles dependiendo del tab activo */
+    input:nth-child(1):checked~#panels div:nth-child(1),
+    input:nth-child(2):checked~#panels div:nth-child(2),
+    input:nth-child(3):checked~#panels div:nth-child(3),
+    input:nth-child(4):checked~#panels div:nth-child(4),
+    input:nth-child(5):checked~#panels div:nth-child(5),
+    input:nth-child(6):checked~#panels div:nth-child(6),
+    input:nth-child(7):checked~#panels div:nth-child(7),
+    input:nth-child(8):checked~#panels div:nth-child(8) {
+        display: block
+    }
+
+    /* Tabs en cheched */
+    input:nth-child(1):checked~#tabs label:nth-child(1),
+    input:nth-child(2):checked~#tabs label:nth-child(2),
+    input:nth-child(3):checked~#tabs label:nth-child(3),
+    input:nth-child(4):checked~#tabs label:nth-child(4),
+    input:nth-child(5):checked~#tabs label:nth-child(5),
+    input:nth-child(6):checked~#tabs label:nth-child(6),
+    input:nth-child(7):checked~#tabs label:nth-child(7),
+    input:nth-child(8):checked~#tabs label:nth-child(8) {
+        background-color: rgba(255, 75, 153, 0.842);
+        border-top: 3px solid white;
+        color: white;
+    } 

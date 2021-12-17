@@ -1,0 +1,138 @@
+/* Imagen de fondo que cubre la pantalla sin sobresalir ni duplicarse */
+body {
+    background-image: url("../images/mario_party_superstars_woody_woods.jpg");
+    background-size: cover;
+}
+
+/* Tabla */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 160px;
+}
+
+/* Celdas de la tabla */
+table tr td {
+    background-color: rgba(255, 178, 35, 0.76);
+    border-radius: 10px;
+    border: solid 1px black;
+    height: 62px;
+    width: 200px;
+}
+
+/* Imagenes de los Titulos (1ª fila de la tabla) */
+table tr:first-child td:nth-child(2) {
+    background-image: url("../images/title_sprites.png");
+}
+
+table tr:first-child td:nth-child(3) {
+    background-image: url("../images/title_sprites.png");
+    background-position-x: -200px;
+}
+
+table tr:first-child td:nth-child(4) {
+    background-image: url("../images/title_sprites.png");
+    background-position-x: -400px;
+}
+
+table tr:first-child td:nth-child(5) {
+    background-image: url("../images/title_sprites.png");
+    background-position-x: -600px;
+}
+
+table tr:first-child td:nth-child(6) {
+    background-image: url("../images/title_sprites.png");
+    background-position-x: -800px;
+}
+
+table tr:first-child td:nth-child(7) {
+    background-image: url("../images/title_sprites.png");
+    background-position-x: -1000px;
+}
+
+table tr:first-child td:nth-child(8) {
+    background-image: url("../images/title_sprites.png");
+    background-position-x: -1200px;
+}
+
+table tr:first-child td:nth-child(9) {
+    background-image: url("../images/title_sprites.png");
+    background-position-x: -1400px;
+}
+
+/* Redimensión de la primera columna */
+table tr td:first-child {
+    width: 62px;
+    height: 62px;
+}
+
+/* Imagenes de los Personajes (1ª columna de la tabla) */
+table tr:nth-child(2) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+}
+
+table tr:nth-child(3) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -63px;
+}
+
+table tr:nth-child(4) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -126px;
+}
+
+table tr:nth-child(5) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -189px;
+}
+
+table tr:nth-child(6) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -252px;
+}
+
+table tr:nth-child(7) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -315px;
+}
+
+table tr:nth-child(8) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -378px;
+}
+
+table tr:nth-child(9) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -441px;
+}
+
+table tr:nth-child(10) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -504px;
+}
+
+table tr:nth-child(11) td:first-child {
+    background-image: url("../images/character_sprites.png");
+    background-size: cover;
+    background-position-x: -567px;
+}
+
+/* Imagenes de los ticks o cruces */
+.true {
+    background-image: url("../images/tick_cross_sprites.png");
+}
+
+.false {
+    background-image: url("../images/tick_cross_sprites.png");
+    background-position-x: -200px;
+}

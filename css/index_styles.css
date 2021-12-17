@@ -1,0 +1,124 @@
+    /* Imagen de fondo que cubre la pantalla sin sobresalir ni duplicarse */
+    body {
+        background-image: url("../images/mario_party_superstars_yoshis_tropical_island.jpg");
+        background-size: cover;
+    }
+
+    /* Titulo */
+    #content {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 350px;
+        height: 250px;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid gray;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+        background-color: rgba(231, 231, 231, 0.836);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    #content h1 {
+        bottom: 20px;
+        font-size: 30px;
+    }
+
+    #content h2 {
+        bottom: 20px;
+        font-size: 20px;
+    }
+
+    #content h2::after {
+        background-color: rgb(255, 75, 152);
+        content: "";
+        display: block;
+        height: 3px;
+        position: relative;
+        top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #content h1, #content h2 {
+        text-align: center;
+    }
+
+    #content h1, #content h2, #content p {
+        color: rgb(255, 75, 152);
+    }
+
+    /* Menú vertical*/
+    #index ul {
+        display: table;
+        height: 20px;
+        position: absolute;
+        text-align: center;
+        top: 20px;
+        width: 100%;
+        
+    }
+
+    #index ul li:hover {
+        background-color: rgb(255, 75, 152);
+    }
+
+    /* Celdas del menú vertical */
+    #index ul li {
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+        display: table-cell;
+        font-size: 20px;
+        position: relative;
+        transition: all 0.2s ease;
+    }
+
+    /* Enlaces del menú */
+    a {
+        color: white;
+        display: inline-block;
+        position: relative;
+        height: 20px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    /* Primer y ultimo elemento de la lista usados para generar ese espacio de los laterales */
+    #index>ul:first-child>li:first-child,
+    #index>ul:first-child>li:last-child {
+        background-color: transparent;
+        cursor: auto;
+        display: hidden;
+        width: 20%;
+    }
+
+    /* Submenú */
+    #index ul li ul {
+        display: none;
+        position: absolute;
+        transition: all 0.5s ease;
+        visibility: hidden;
+    }
+
+    #index ul li:hover ul {
+        display: block;
+        position: absolute;
+        top: 40px;
+        visibility: visible;
+        width: 100%;
+    }
+
+    #index ul li:hover ul li {
+        background-color: rgb(255, 75, 152);
+        display: inline-block;
+        height: 40px;
+        width: 100%;
+    }

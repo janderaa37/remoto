@@ -1,0 +1,310 @@
+    /* Imagen de fondo que cubre la pantalla sin sobresalir ni duplicarse */
+    body {
+        background-image: url("../images/mario_party_superstars_birthday_cake_back.jpg");
+        background-size: cover;
+    }
+
+    /* Sombras */
+    h1,
+    input,
+    button {
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    /* Contenedor del formulario */
+    #content {
+        box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
+        display: table;
+        height: 600px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 150px;
+        width: 1000px;
+    }
+
+    /* Estilos comunes*/
+    /* Contenedores */
+    #content div {
+        display: table-cell;
+        position: relative;
+        width: 50%;
+    }
+
+    /* Texto */
+    #content div h2 {
+        font-size: 30px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Apartados del formulario */
+    #content div ul li {
+        display: block;
+        left: 20px;
+        padding: 20px;
+        position: relative;
+        top: 20px;
+    }
+
+    /* Inputs */
+    input {
+        background-color: transparent;
+        border-radius: 10px;
+        height: 40px;
+        outline: none;
+        padding-left: 50px;
+        width: 70%;
+    }
+
+    /* PlaceHolder */
+    ::placeholder {
+        visibility: hidden;
+        transition: all 0.2s ease;
+    }
+
+    input:focus::placeholder {
+        visibility: visible;
+    }
+
+    /* Labels */
+    label {
+        bottom: 35px;
+        color: lightgray;
+        font-size: 15px;
+        left: 70px;
+        position: absolute;
+        transition: all 0.5s ease;
+    }
+
+    /* Labels con el foco */
+    #content div label.top {
+        border-radius: 25px;
+        bottom: 57px;
+        font-size: 15px;
+        left: 70px;
+        padding-left: 5px;
+        padding-right: 5px;
+        position: absolute;
+    }
+
+    /* Barras bajo el titulo */
+    #content div:first-child h2::after,
+    #content div:nth-child(2) h2::after {
+        background-color: lightgray;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 0px;
+        position: relative;
+        top: 20px;
+        width: 500px;
+    }
+
+    /* Iconos */
+    .fas {
+        bottom: 27px;
+        color: lightgray;
+        font-size: 30px;
+        height: 30px;
+        left: 30px;
+        position: absolute;
+        width: 30px;
+    }
+
+
+
+    /* Información personal */
+    /* Contenedor */
+    #content div:first-child {
+        background-color: black;
+
+    }
+    
+    /* Texto */
+    #content div:first-child h2 {
+        color: white;
+    }
+    
+    /* Labels con el foco */
+    #content div:first-child label.top {
+        background-color: black;
+        color: white;
+    }
+    
+    /* Inputs */
+    #content div:first-child ul li input {
+        border: solid 2px white;
+        box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.425);
+        color: white;
+    }
+    
+    /* Tamaño de los distintos inputs */
+    #content div:first-child ul li:nth-child(1) input {
+        width: 35%;
+    }
+    
+    #content div:first-child ul li:nth-child(2) input {
+        width: 50%;
+    }
+    
+    #content div:first-child ul li:nth-child(3) input {
+        width: 25%;
+    }
+    
+    #content div:first-child ul li:nth-child(4) input {
+        width: 40%;
+    }
+    
+
+
+    /* Información de usuario */
+    /* Contenedor*/
+    #content div:nth-child(2) {
+        background-color: white;
+    }
+    
+    #content div:nth-child(2) h2 {
+        color: black;
+    }
+    
+    #content div:nth-child(2) ul li input {
+        border: solid 2px black;
+        color: black;
+    }
+    
+    #content div:nth-child(2) ul li:nth-child(1) input {
+        width: 60%;
+    }
+    
+    #content div:nth-child(2) ul li:nth-child(2) input,
+    #content div:nth-child(2) ul li:nth-child(3) input {
+        width: 30%;
+    }
+    
+    #content div:nth-child(2) ul li:last-child {
+        width: 400px;
+        position: relative;
+        top: 50px;
+        left: -50px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child input {
+        display: none;
+    }
+    
+
+    /* Check con estilos */
+    #content div:nth-child(2) ul li:last-child label {
+        background-image: url("../images/character_sprites.png");
+        border: solid 1px black;
+        border-radius: 15px;
+        color: black;
+        height: 62px;
+        width: 62px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block;
+        transition: all 0.5s ease;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:hover {
+        box-shadow: 5px 5px 5px 2px rgba(128, 128, 128, 0.808);
+    }
+    
+    #content div:nth-child(2) ul li:last-child input:checked+label {
+        box-shadow: 5px 5px 5px 2px rgba(255, 5, 113, 0.808);
+    }
+
+    #content div:nth-child(2) label.top {
+        background-color: white;
+        color: black;
+    }
+
+    /* Colocación del sprite de cada Personaje */
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(1) {
+        background-position-x: -1px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(2) {
+        background-position-x: -64px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(3) {
+        background-position-x: -127px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(4) {
+        background-position-x: -190px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(5) {
+        background-position-x: -253px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(6) {
+        background-position-x: -316px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(7) {
+        background-position-x: -379px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(8) {
+        background-position-x: -442px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(9) {
+        background-position-x: -505px;
+        background-position-y: -1px;
+    }
+    
+    #content div:nth-child(2) ul li:last-child label:nth-of-type(10) {
+        background-position-x: -568px;
+        background-position-y: -1px;
+    }
+    
+
+    /* Botón de enviar */
+    #send {
+        background-color: rgb(255, 75, 152);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        display: block;
+        font-size: 20px;
+        height: 80px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 20vh;
+        width: 300px;
+    }
+    
+    #send:hover {
+        background-color: rgb(255, 5, 113);
+    }
+
+    /* Indicador de error */
+    #content div div {
+        text-align: end;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        display: block;
+        top: 25px;
+        left: 400px;
+        background-image: url("../images/error_icon.png");
+        background-size: 40px;
+        visibility: hidden;
+    }
